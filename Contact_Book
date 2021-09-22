@@ -1,0 +1,46 @@
+#Importing Tkinter and the "messagebox" module
+from tkinter import *
+from tkinter import messagebox
+
+# These lists store the contact data, the handler is to help import CSV files
+contact_names = ["","","","","","","","","","","","","","","","","","","",""]
+contact_numbers = ["","","","","","","","","","","","","","","","","","","",""]
+contact_email = ["","","","","","","","","","","","","","","","","","","",""]
+handler_list = ["","","","","","","","","","","","","","","","","","","",""]
+
+
+root = Tk()
+root.title ("Contact Book")
+
+def add_contact():
+    return
+
+# Defining the Buttons
+add_contact = Button (root, text="Add Contacts", command=add_contact)
+
+remove_contact = Button (root, text="Remove Contacts", command=add_contact)
+
+edit_contact = Button (root, text="Edit Contacts", command=add_contact)
+
+save_contact = Button (root, text="Save Contacts", command=add_contact)
+
+import_contact = Button (root, text="Import Contacts", command=add_contact)
+
+view_contact = Button (root, text="View Contacts", command=add_contact)
+
+# Putting the buttons on the screen
+add_contact.grid(row=0, column=0, padx=10, pady=10)
+
+remove_contact.grid(row=1, column=0, padx=10, pady=10)
+
+edit_contact.grid(row=2, column=0, padx=10, pady=10)
+
+save_contact.grid(row=3, column=0, padx=10, pady=10)
+
+import_contact.grid(row=4, column=0, padx=10, pady=10)
+
+view_contact.grid(row=5, column=0, padx=10, pady=10)
+
+
+
+root.mainloop()
